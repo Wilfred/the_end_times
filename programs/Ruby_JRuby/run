@@ -1,0 +1,3 @@
+#!/bin/bash
+
+jruby -Xcompile.invokedynamic=true -J-server -J-Xmn512m -J-Xms2048m -J-Xmx2048m pidigits.rb 10000 > output.txt

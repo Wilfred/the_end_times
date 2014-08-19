@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ruby pidigits.rb 10000 > output.txt
