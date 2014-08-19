@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ghc --make -fllvm -O2 -XBangPatterns -threaded -rtsopts pidigits.hs -o bin
