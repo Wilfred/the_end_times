@@ -15,3 +15,10 @@ A comparison of programming language implementation performance.
 
 Code is under the BSD license, and includes code originally from The
 Computer Language Benchmarks Game.
+
+## Preliminary Results
+
+Python3 (CPython) took 18.839 seconds
+Python3 (pypy) took 14.265 seconds
+Ruby (JRuby) took 53.936 seconds
+Ruby (MRI) took 27.182 seconds
