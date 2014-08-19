@@ -1,4 +1,9 @@
-the_end_times
-=============
+# The End Times
 
-comparing programming language implementation performance
+A comparison of programming language implementation performance.
+
+## Rules
+
+* Each program should implement the same algorithm.
+
+* No FFI.
