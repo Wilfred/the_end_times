@@ -1,0 +1,3 @@
+#!/bin/bash
+
+rustc --opt-level=3 pidigits.rs -o bin
