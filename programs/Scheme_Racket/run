@@ -1,0 +1,3 @@
+#!/bin/bash
+
+racket pidigits.racket 10000

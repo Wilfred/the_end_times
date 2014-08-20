@@ -30,3 +30,4 @@ Computer Language Benchmarks Game.
 | Ruby | JRuby | 26.803 |
 | Ruby | MRI | 26.135 |
 | Rust | Rust | 11.930 |
+| Scheme | Racket | 16.837 |
