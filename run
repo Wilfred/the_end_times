@@ -4,6 +4,19 @@ import os
 import sys
 from time import time
 
+
+BOLD = '\033[1m'
+RESET = '\033[0m'
+
+WHITE = '\033[37m'
+BLUE = '\033[34m'
+GREEN = '\033[32m'
+
+
+def print_heading(text):
+    print "%s%s==>%s %s%s" % (BOLD, BLUE, WHITE, text, RESET)
+
+
 if __name__ == '__main__':
     CURRENT_PATH = os.path.dirname(os.path.realpath(__file__))
     PROGRAMS_PATH = os.path.join(CURRENT_PATH, 'programs')
@@ -16,8 +29,10 @@ if __name__ == '__main__':
     for test_program_dir in sorted(os.listdir(PROGRAMS_PATH)):
         language, implementation = test_program_dir.split('_')
 
+        print_heading("%s (%s)" % (language, implementation))
+
         if language_filter not in language.lower():
-            print "Skipping %s (%s)" % (language, implementation)
+            print "Skipping due to filter %r" % language_filter
             continue
 
         test_program_path = os.path.join(PROGRAMS_PATH, test_program_dir)
@@ -29,9 +44,11 @@ if __name__ == '__main__':
         # Build "bin" if it doesn't already exist.
         if os.path.exists(build_script_path):
             if not os.path.exists(os.path.join(test_program_path, 'bin')):
+                print "Building."
                 os.system(build_script_path)
-            
+                
         if os.path.exists(run_script_path):
+            print "Running test program."
             before = time()
             
             return_code = os.system("%s > output.txt" % run_script_path)
@@ -39,6 +56,6 @@ if __name__ == '__main__':
             elapsed = after - before
 
             if return_code == 0:
-                print "%s (%s) took %.3f seconds" % (language, implementation, elapsed)
+                print "Took %.3f seconds." % (elapsed,)
             else:
-                print "%s (%s) failed" % (language, implementation)
+                print "Failed."
