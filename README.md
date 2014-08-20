@@ -18,9 +18,11 @@ Computer Language Benchmarks Game.
 
 ## Preliminary Results
 
-* Haskell (GHC) took 4.503 seconds
-* Python3 (CPython) took 18.839 seconds
-* Python3 (pypy) took 14.265 seconds
-* Ruby (JRuby) took 53.936 seconds
-* Ruby (MRI) took 27.182 seconds
-* Rust (Rust) took 25.203 seconds
+| Language | Implementation | Time/seconds |
+|----------|----------------|-------------:|
+| Haskell | GHC | 1.582 |
+| Python3 | CPython | 4.391 |
+| Python3 | pypy | 6.505 |
+| Ruby | JRuby | 26.803 |
+| Ruby | MRI | 26.135 |
+| Rust | Rust | 11.930 |
