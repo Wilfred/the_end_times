@@ -15,12 +15,21 @@ A comparison of programming language implementation performance.
 * Different language implementations (e.g. GCC and Clang) may have
   different test programs.
 
-## License
+## How to run it
 
-Code is under the BSD license, and includes code originally from The
-Computer Language Benchmarks Game.
+Check out the code, and run `run`.
+
+     $ git clone git@github.com:Wilfred/the_end_times.git
+     $ cd the_end_times
+     $ ./run
+
+You will need Python 2, and all the languages you are interested in testing.
 
 ## Preliminary Results
+
+### Pidigits
+
+Pidigits tests numeric performance for arbitrary sized integers.
 
 | Language | Implementation | Time/seconds |
 |----------|----------------|-------------:|
@@ -31,3 +40,9 @@ Computer Language Benchmarks Game.
 | Ruby | MRI | 26.135 |
 | Rust | Rust | 11.930 |
 | Scheme | Racket | 16.837 |
+
+## License
+
+Code is under the BSD license, and includes code originally from The
+Computer Language Benchmarks Game.
+
