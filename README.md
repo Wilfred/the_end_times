@@ -8,6 +8,10 @@ A comparison of programming language implementation performance.
 
 * No FFI.
 
+* No inline assembly (unless you're submitting an assembly test program!)
+
+* No external libraries.
+
 * Different language implementations (e.g. GCC and Clang) may have
   different test programs.
 
