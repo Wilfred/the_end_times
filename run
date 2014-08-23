@@ -36,8 +36,8 @@ if __name__ == '__main__':
 
         print_heading(test_program_type_dir)
 
-        for implementation_dir in sorted(os.listdir(test_program_type_path)):
-
+        for implementation_dir in sorted(dir_name for dir_name in os.listdir(test_program_type_path)
+                                         if '_' in dir_name):
             language, implementation = implementation_dir.split('_')
 
             print_subheading("%s (%s)" % (language, implementation))
