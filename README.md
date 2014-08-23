@@ -1,6 +1,7 @@
 # The End Times
 
-A comparison of programming language implementation performance.
+A comparison of programming language implementation performance. We
+focus on the performance of the built-in primitives the language provides.
 
 ## Rules
 
@@ -11,6 +12,9 @@ A comparison of programming language implementation performance.
 * No inline assembly (unless you're submitting an assembly test program!)
 
 * No external libraries.
+
+* No rolling your own datatypes. We're interested in the performance
+  of those already provided.
 
 * Different language implementations (e.g. GCC and Clang) may have
   different test programs.
