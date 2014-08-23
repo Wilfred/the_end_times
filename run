@@ -42,7 +42,7 @@ if __name__ == '__main__':
 
             print_subheading("%s (%s)" % (language, implementation))
 
-            if language_filter not in language.lower():
+            if language_filter not in implementation_dir.lower():
                 print "Skipping due to filter %r" % language_filter
                 continue
 
