@@ -1,0 +1,6 @@
+#!/bin/bash
+
+sbcl --noinform \
+    --eval "(load \"pidigits.lisp\")" \
+    --eval "(sb-ext:save-lisp-and-die \"run\" :executable t :toplevel 'main)" \
+    --eval "(quit)"
