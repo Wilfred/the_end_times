@@ -37,6 +37,7 @@ Pidigits tests numeric performance for arbitrary sized integers.
 
 | Language | Implementation | Time/seconds |
 |----------|----------------|-------------:|
+| Common Lisp | SBCL | 11.635 |
 | Go | Go | 2.956 |
 | Haskell | GHC | 1.582 |
 | Python3 | CPython | 4.391 |
