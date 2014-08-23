@@ -1,0 +1,3 @@
+#!/bin/bash
+
+guile -s pidigits.scm 10000

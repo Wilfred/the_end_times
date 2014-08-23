@@ -46,6 +46,7 @@ Pidigits tests numeric performance for arbitrary sized integers.
 | Ruby | MRI | 26.135 |
 | Rust | Rust | 11.930 |
 | Scheme | Gambit | 13.763 |
+| Scheme | Guile | 8.644 |
 | Scheme | Racket | 16.837 |
 
 ## License
