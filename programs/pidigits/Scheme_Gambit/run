@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Arch linux has gambit-c instead of gsc, but I keep getting errors
+# about missing /usr/lib/gambit-c/libgambc.a.
+gsi pidigits.scm 10000
