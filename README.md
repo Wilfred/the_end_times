@@ -35,6 +35,9 @@ You will need Python 2, and all the languages you are interested in testing.
 
 Pidigits tests numeric performance for arbitrary sized integers.
 
+GHC does really well here as it uses GMP underneath. Go's impressive
+performance is due to some of the math/big library being written in assembly.
+
 | Language | Implementation | Time/seconds |
 |----------|----------------|-------------:|
 | Common Lisp | SBCL | 11.635 |
