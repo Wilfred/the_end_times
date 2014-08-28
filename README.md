@@ -37,7 +37,8 @@ Pidigits tests numeric performance for arbitrary sized integers.
 
 GHC does really well here as it uses GMP underneath. Go's impressive
 performance is due to some of the math/big library being written in
-assembly.
+assembly. Julia also uses GMP, so I suspect there is low hanging fruit
+in optimisations still.
 
 CPython beats out pypy as
 [pypy's JIT can't help in this benchmark](https://mail.python.org/pipermail/pypy-dev/2014-August/012713.html).
@@ -46,6 +47,7 @@ CPython beats out pypy as
 |----------|----------------|-------------:|
 | Common Lisp | SBCL | 11.635 |
 | Go | Go | 2.956 |
+| Julia | Julia |  5.790 |
 | Haskell | GHC | 1.582 |
 | Python3 | CPython | 4.391 |
 | Python3 | pypy | 6.505 |
