@@ -53,6 +53,7 @@ CPython beats out pypy as
 | Python3 | pypy | 6.505 |
 | Ruby | JRuby | 26.803 |
 | Ruby | MRI | 26.135 |
+| Ruby | Rubinius | 13.624 |
 | Rust | Rust | 11.930 |
 | Scheme | Chicken | 8.181 |
 | Scheme | Gambit | 13.763 |
