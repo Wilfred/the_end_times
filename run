@@ -62,7 +62,7 @@ if __name__ == '__main__':
                 print "Running test program."
                 before = time()
 
-                return_code = os.system("%s > output.txt" % run_script_path)
+                return_code = os.system(run_script_path)
                 after = time()
                 elapsed = after - before
 

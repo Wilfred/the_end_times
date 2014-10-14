@@ -2,4 +2,4 @@
 
 # You may need to edit /etc/php/php.ini and
 # uncomment bcmath.so.
-php pidigits.php 10000
+php pidigits.php 10000 > output.txt
