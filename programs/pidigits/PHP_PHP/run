@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# You may need to edit /etc/php/php.ini and
+# uncomment bcmath.so.
+php pidigits.php 10000
