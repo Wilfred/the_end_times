@@ -2,3 +2,4 @@ output.txt
 bin
 *.hi
 *.o
+*.class
