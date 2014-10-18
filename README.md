@@ -43,22 +43,26 @@ in optimisations still.
 CPython beats out pypy as
 [pypy's JIT can't help in this benchmark](https://mail.python.org/pipermail/pypy-dev/2014-August/012713.html).
 
-| Language | Implementation | Time/seconds |
+Run on an AMD Phenom X4 965 with 4 GiB RAM with Linux x86_64 3.16.4.
+
+| Language | Implementation | Time in seconds |
 |----------|----------------|-------------:|
-| Common Lisp | SBCL | 11.635 |
-| Go | Go | 2.956 |
-| Julia | Julia |  5.790 |
-| Haskell | GHC | 1.582 |
-| Python3 | CPython | 4.391 |
-| Python3 | pypy | 6.505 |
-| Ruby | JRuby | 26.803 |
-| Ruby | MRI | 26.135 |
-| Ruby | Rubinius | 13.624 |
-| Rust | Rust | 11.930 |
-| Scheme | Chicken | 8.181 |
-| Scheme | Gambit | 13.763 |
-| Scheme | Guile | 8.644 |
-| Scheme | Racket | 16.837 |
+| Common Lisp | SBCL 1.2.2 | 12.049 |
+| Go | Go 1.3.3 | 2.899 |
+| Haskell | GHC 7.8.3 | 1.583 |
+| Java | OpenJDK 1.7.0_71 | 19.618 |
+| Julia | Julia 0.3.1 |  7.395 |
+| PHP | PHP 5.6.2 | 438.732 |
+| Python3 | CPython 3.4.2 | 4.568 |
+| Python3 | pypy 2.3.1 | 8.881 |
+| Ruby | JRuby 1.7.16 | 29.197 |
+| Ruby | MRI 2.1.3p242 | 27.721 |
+| Ruby | Rubinius 2.2.10 | 19.010 |
+| Rust | Rust 0.12.0-dev | 11.793 |
+| Scheme | Chicken 4.9.0.1 | 8.350 |
+| Scheme | Gambit 4.7.3 | 14.631 |
+| Scheme | Guile 2.0.11 | 9.413 |
+| Scheme | Racket 6.1 | 17.369 |
 
 ## License
 
