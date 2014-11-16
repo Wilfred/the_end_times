@@ -59,7 +59,6 @@ Run on an AMD Phenom X4 965 with 4 GiB RAM with Linux x86_64 3.16.4.
 | Ruby | MRI 2.1.3p242 | 27.721 |
 | Ruby | Rubinius 2.2.10 | 19.010 |
 | Rust | Rust 0.12.0-dev | 11.793 |
-| Scheme | Chicken 4.9.0.1 | 8.350 |
 | Scheme | Gambit 4.7.3 | 14.631 |
 | Scheme | Guile 2.0.11 | 9.413 |
 | Scheme | Racket 6.1 | 17.369 |

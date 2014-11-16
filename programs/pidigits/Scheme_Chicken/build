@@ -1,3 +1,0 @@
-#!/bin/bash
-
-csc pidigits.scm -o bin -optimize-level 5
