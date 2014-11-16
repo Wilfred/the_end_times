@@ -54,7 +54,7 @@ Run on an AMD Phenom X4 965 with 4 GiB RAM with Linux x86_64 3.16.4.
 | Julia | Julia 0.3.1 |  7.395 |
 | PHP | PHP 5.6.2 | 438.732 |
 | Python3 | CPython 3.4.2 | 4.568 |
-| Python3 | pypy 2.3.1 | 8.881 |
+| Python3 | pypy 2.4.0 | 6.463 |
 | Ruby | JRuby 1.7.16 | 29.197 |
 | Ruby | MRI 2.1.3p242 | 27.721 |
 | Ruby | Rubinius 2.2.10 | 19.010 |
