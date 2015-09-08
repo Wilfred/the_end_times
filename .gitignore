@@ -3,3 +3,4 @@ bin
 *.hi
 *.o
 *.class
+.crystal
