@@ -61,4 +61,4 @@ function pidigits(N::Int=1000)
     pidigits(N,false)
 end
 
-print(pidigits(int(ARGS[1]), true))
+print(pidigits(parse(Int, ARGS[1]), true))
