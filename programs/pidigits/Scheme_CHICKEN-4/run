@@ -1,0 +1,3 @@
+#!/bin/bash
+
+csc -postlude '(main (command-line-arguments))' pidigits.scm && ./pidigits 10000 > output.txt
