@@ -4,6 +4,8 @@ import os
 import sys
 from time import time
 
+# Catch-all if empty
+IMPLEMENTATION_DIRS = []
 
 BOLD = '\033[1m'
 RESET = '\033[0m'
@@ -38,35 +40,36 @@ if __name__ == '__main__':
 
         for implementation_dir in sorted(dir_name for dir_name in os.listdir(test_program_type_path)
                                          if '_' in dir_name):
-            language, implementation = implementation_dir.split('_')
+            if not IMPLEMENTATION_DIRS or implementation_dir in IMPLEMENTATION_DIRS:
+                language, implementation = implementation_dir.split('_')
 
-            print_subheading("%s (%s)" % (language, implementation))
+                print_subheading("%s (%s)" % (language, implementation))
 
-            if language_filter not in implementation_dir.lower():
-                print "Skipping due to filter %r" % language_filter
-                continue
+                if language_filter not in implementation_dir.lower():
+                    print "Skipping due to filter %r" % language_filter
+                    continue
 
-            test_program_path = os.path.join(test_program_type_path, implementation_dir)
-            os.chdir(test_program_path)
+                test_program_path = os.path.join(test_program_type_path, implementation_dir)
+                os.chdir(test_program_path)
 
-            build_script_path = os.path.join(test_program_path, 'build')
-            run_script_path = os.path.join(test_program_path, 'run')
+                build_script_path = os.path.join(test_program_path, 'build')
+                run_script_path = os.path.join(test_program_path, 'run')
 
-            # Build "bin" if it doesn't already exist.
-            if os.path.exists(build_script_path):
-                if not os.path.exists(os.path.join(test_program_path, 'bin')):
-                    print "Building."
-                    os.system(build_script_path)
+                # Build "bin" if it doesn't already exist.
+                if os.path.exists(build_script_path):
+                    if not os.path.exists(os.path.join(test_program_path, 'bin')):
+                        print "Building."
+                        os.system(build_script_path)
 
-            if os.path.exists(run_script_path):
-                print "Running test program."
-                before = time()
+                if os.path.exists(run_script_path):
+                    print "Running test program."
+                    before = time()
 
-                return_code = os.system(run_script_path)
-                after = time()
-                elapsed = after - before
+                    return_code = os.system(run_script_path)
+                    after = time()
+                    elapsed = after - before
 
-                if return_code == 0:
-                    print "Took %.3f seconds." % (elapsed,)
-                else:
-                    print "Failed."
+                    if return_code == 0:
+                        print "Took %.3f seconds." % (elapsed,)
+                    else:
+                        print "Failed."
